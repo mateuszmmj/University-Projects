@@ -15,7 +15,7 @@ all: $(TARGET)
 $(TARGET): $(OBJS)
 	$(CC) $(LDFLAGS) -o $@ $(OBJS)
 
-rstack.o: rstack.c rstack.h structs.h
+rstack.o: rstack.c rstack.h
 	$(CC) $(CFLAGS) -c rstack.c -o rstack.o
 
 memory_tests.o: memory_tests.c memory_tests.h
